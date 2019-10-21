@@ -85,9 +85,10 @@
                 EnemyXspeed *= -1
             }
 
-            //            if(){
-            //
-            // }
+            if (EnemyXpos + EnemySize > playerXpos && EnemyXpos < playerXpos + playerSize && EnemyYpos + EnemySize > playerYpos && EnemyYpos < playerYpos + playerSize) {
+                playerXpos = 0;
+                playerYpos = 0;
+            }
         }
 
         function enemyMove() {
